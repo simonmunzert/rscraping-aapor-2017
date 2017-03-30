@@ -72,7 +72,7 @@ browseURL("https://www.buzzfeed.com/?country=us")
 # works via tag name (e.g., <h2>, <p>, ...) or element attributes "id" and "class"
 
 ## How does it work?
-browseURL("http://flukeout.github.io/") # let's play this together until plate 8 or so!
+browseURL("http://flukeout.github.io/") 
 
 
 #######################
@@ -85,9 +85,7 @@ browseURL("https://www.jstatsoft.org/about/editorialTeam")
   # a) which CSS identifiers can be used to describe all names of the editorial team?
   # b) write a corresponding CSS selector that targets them!
 
-.member a
-div.member a
-#group a
+
 
 ## a quick primer to XPath ------------------
 
@@ -273,6 +271,6 @@ head(dat)
 dattop <- dat[order(dat$numViews, decreasing = TRUE),]
 dattop[1:10,]
 summary(dat$numViews)
-plot(density(dat$numViews, from = 0, ), yaxt="n", ylab="", xlab="Number of views", main="Distribution of article page views in JSTATSOFT")
+plot(density(dat$numViews, from = 0), yaxt="n", ylab="", xlab="Number of views", main="Distribution of article page views in JSTATSOFT")
 
 
