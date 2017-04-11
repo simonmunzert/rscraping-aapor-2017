@@ -180,7 +180,6 @@ getCurRateLimitInfo()
 
 
 ## working with the rtweet package
-
 tweets_aapor <- search_tweets("#AAPOR", n = 100)
 names(tweets_aapor)
 tweets_aapor$text[1:3]
